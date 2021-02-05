@@ -1,0 +1,18 @@
+
+body
+{
+    color: white !important;
+    background-color: black;
+}
+input,textarea
+{
+    color: white !important;
+    background-color: transparent !important;
+    border-color: #a8a8a83d !important;
+}
+.layer
+{
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+}
