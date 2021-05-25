@@ -105,7 +105,7 @@ function deleteProduct(productIndex){
 
     productContainer.splice(productIndex,1);
     localStorage.setItem("products" , JSON.stringify(productContainer));
-    displayProduct();
+    searchProduct(searchInput.value);
 }
 
 
@@ -124,7 +124,9 @@ btnUpdata.addEventListener("click" , function updateProduct(){
     productContainer[updateIndex] = product ;
     localStorage.setItem("products" , JSON.stringify(productContainer));
     clearForm();
-    displayProduct();
+    // displayProduct();
+    searchProduct(searchInput.value);
+
     
     btnUpdata.classList.replace("d-flex" , "d-none");
     btnAdd.classList.replace("d-none" , "d-flex")
@@ -141,6 +143,9 @@ function getDataFromTable(productIndex){
 
     btnUpdata.classList.replace("d-none" , "d-flex");
     btnAdd.classList.replace("d-flex" , "d-none");
+
+
+    $("html,body").animate( {scrollTop:0} , 1000 )
 }
 
 
