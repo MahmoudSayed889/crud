@@ -1,7 +1,6 @@
 <html>
 
 <head>
-    <title>CRUD</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -43,7 +42,7 @@
 
 
     <div class="container pb-4">
-        <input onkeyup="searchProduct(this.value)" class="form-control w-75 m-auto" placeholder="Search Product" type="text">
+        <input id="searchInput" onkeyup="searchProduct(this.value)" class="form-control w-75 m-auto" placeholder="Search Product" type="text">
     </div>
 
 
@@ -64,8 +63,9 @@
             </tbody>
         </table>
     </div>
-    
-    
+
+
+
     <script src="js/jquery-3.6.0.min.js"></script>
     
     <script src="js/script.js"></script>
